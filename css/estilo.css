@@ -1,7 +1,7 @@
 .root{
 
   --bg-color: #0C0C23;
-  /*--bg-color1: linear-gradient(70deg, blue,#0C0C23);*/
+  --bg-color1: linear-gradient(70deg, blue,#0C0C23); /*Corrigido estava comentado*/
   --bg-color3:#FC6600;
   --bg-color4:red;
   --bg-color5:#fff;
@@ -19,7 +19,7 @@
   box-sizing: border-box;
 
 
-body {
+body { 
   background: var(--bg-color);
 }
 
@@ -39,15 +39,15 @@ body {
   width: 100px;
   height: 100px;
 }
-#monu {
+#menu { /*Corrigido estava monu*/
   display: flex;
   list-style: none;
   gap:0.5rem;
 }
-#monu a {
+#menu a:hover { /*Corrigido estava monu,e colocou :hover*/
   display:block;
 }
-#monu a {
+#menu a:hover { /*Corrigido estava monu,e colocou :hover*/
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px;
@@ -91,7 +91,7 @@ section {
   mix-blend-mode:luminosity;
 }
 
-#img::hover{
+#img:hover{ /* Corrigido tinha dois :*/ 
   animation: efeito 0.5s ease-in-out infinite;
 }
 
@@ -201,7 +201,7 @@ h1{
   left: -50%;
   width: 100%;
   height: 100%;
-  /*background: linear-gradient(-45deg, var(--accent-color), #520852);*/
+  background: linear-gradient(-45deg, var(--accent-color), #520852); /*Corrigido estava comentado*/
   background: var(--bg-color);
   z-index: 6;
   transform: translateX(100%);
@@ -278,7 +278,7 @@ h1{
 
 @keyframes efeito {
   0%{
-    transform:scale(1)
+    transform:scale(1); /* Corrigido faltava ; */
   }
   50%{
     
@@ -286,7 +286,7 @@ h1{
   }
   100%{
     transform: scale(1.1);
-    filter:drop-shadow(var(--bg-color3)0 0 2rem)
+    filter:drop-shadow(var(--bg-color3)0 0 2rem); /* Corrigido faltava ; */
   }
   
 }
@@ -355,7 +355,7 @@ h1{
 @media (max-width: 600px) {
 
   body {
-    /*background-image: linear-gradient(to right, #dc143c, bisque);*/
+    background-image: linear-gradient(to right, #dc143c, bisque); /*Corrigido estava comentado*/
     background: var(--bg-color3);
   }
   #btnMobile{

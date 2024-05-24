@@ -1,9 +1,9 @@
 
 //efeito login
-const formOpenBtn = document.querySelector("#abrir-form"),
+const formOpenBtn = document.querySelector("#abrir-form"); //Corrigido faltava ;
 home = document.querySelector(".container");
     //faz o pop up aparecer quando aperta em login
-formOpenBtn.addEventListener('click', () => home.classList.add("show"))
+formOpenBtn.addEventListener('click', () => home.classList.add("show")); //Corrigido faltava ;
     //faz o pop up sumir quando aperta fora
 document.addEventListener('click', function (event) {
     if (!home.contains(event.target) && event.target !== formOpenBtn) {
@@ -11,7 +11,7 @@ document.addEventListener('click', function (event) {
     }
 });
   
-const container = document.querySelector(".container");
+const container = document.querySelector(".container"); 
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const sign_in_btn2 = document.querySelector("#sign-in-btn2");
